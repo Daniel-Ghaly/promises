@@ -17,6 +17,11 @@ var fetchProfileAndWriteToFile = function(readFilePath, writeFilePath) {
   // TODO
 };
 
+// Play with examples/chaining.js to build intuition around promise chaining
+// Make Basic chaining tests pass
+// commit: "Complete Bare Minimum Requirements"
+// go back to CRUDdy todo and complete readAll refactor
+
 // Export these functions so we can test them
 module.exports = {
   fetchProfileAndWriteToFile: fetchProfileAndWriteToFile

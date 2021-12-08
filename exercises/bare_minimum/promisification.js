@@ -1,7 +1,7 @@
 /**
  * Create the promise returning `Async` suffixed versions of the functions below,
  * Promisify them if you can, otherwise roll your own promise returning function
- */ 
+ */
 
 var fs = require('fs');
 var request = require('needle');
@@ -47,7 +47,7 @@ var generateRandomTokenAsync; // TODO
 var readFileAndMakeItFunny = function(filePath, callback) {
   fs.readFile(filePath, 'utf8', function(err, file) {
     if (err) { return callback(err); }
-   
+
     var funnyFile = file.split('\n')
       .map(function(line) {
         return line + ' lol';
@@ -59,6 +59,11 @@ var readFileAndMakeItFunny = function(filePath, callback) {
 };
 
 var readFileAndMakeItFunnyAsync; // TODO
+
+
+// make Promisification tests pass
+// commit "Complete bare_minimum/promisification exercises
+// move on to basicChaining.js
 
 // Export these functions so we can test them and reuse them in later exercises
 module.exports = {
